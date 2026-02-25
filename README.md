@@ -44,7 +44,7 @@ await scheduler.execute_dag_now(dag.dag_id)
 
 - **DAG**: Directed Acyclic Graph with cycle detection
 - **Task**: Executable unit with retry/timeout config
-- **Executor**: Runs tasks with error handling
+- **Executor**: Runs tasks with error handling 
 - **Scheduler**: Orchestrates DAG execution
 
 ## License
