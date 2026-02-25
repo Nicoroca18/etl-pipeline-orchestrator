@@ -27,7 +27,7 @@ python examples/basic_dag.py
 from src.models.dag import DAG
 from src.models.task import Task
 from src.scheduler.dag_scheduler import DAGScheduler
-
+ 
 def my_task(**kwargs):
     return {"result": "success"}
 
