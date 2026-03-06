@@ -10,7 +10,7 @@ class DAGScheduler:
     def __init__(self):
         self.executor = LocalExecutor()
         self.dags: Dict[str, DAG] = {}
-    
+     
     def register_dag(self, dag: DAG) -> None:
         if not dag.validate():
             raise ValueError(f"DAG {dag.name} is invalid")
