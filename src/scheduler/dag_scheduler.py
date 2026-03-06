@@ -38,7 +38,7 @@ class DAGScheduler:
             
             results = await asyncio.gather(*tasks_to_run)
             
-            for i, result in enumerate(results):
+            for i, result in enumerate(results): 
                 if result.status == TaskStatus.SUCCESS:
                     completed_tasks.add(executable_tasks[i].task_id)
         
