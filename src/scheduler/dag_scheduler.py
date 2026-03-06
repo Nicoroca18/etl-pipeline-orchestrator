@@ -14,7 +14,7 @@ class DAGScheduler:
     def register_dag(self, dag: DAG) -> None:
         if not dag.validate():
             raise ValueError(f"DAG {dag.name} is invalid")
-        self.dags[dag.dag_id] = dag
+        self.dags[dag.dag_id] = dag 
     
     async def execute_dag_now(self, dag_id: str):
         dag = self.dags.get(dag_id)
