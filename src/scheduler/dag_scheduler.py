@@ -7,7 +7,7 @@ from src.utils.logger import logger
 
 
 class DAGScheduler:
-    def __init__(self):
+    def __init__(self): 
         self.executor = LocalExecutor()
         self.dags: Dict[str, DAG] = {} 
      
